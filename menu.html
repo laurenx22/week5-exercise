@@ -25,293 +25,28 @@
     <p>Handcrafted beverages and fresh-baked treats made with love</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Coffee & Espresso</h2>
+  <main> <!--week 5 deleted all static info and replaced with javascript-->
+    <div id="menu-search">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search the menu..."
+        aria-label="Search menu items"
+        autocomplete="off"
+        spellcheck="false"
+        maxlength="100"
+      />
+    </div>
+    
+    <div id="menu-filters" role="group" aria-label="Filter menu by category">
+      <button type="button" class="filter-btn active" data-category="all">All</button>
+      <button type="button" class="filter-btn" data-category="Coffee & Espresso">Coffee &amp; Espresso</button>
+      <button type="button" class="filter-btn" data-category="Tea & Other Beverages">Tea &amp; Other Beverages</button>
+      <button type="button" class="filter-btn" data-category="Food & Pastries">Food &amp; Pastries</button>
+    </div>
 
-      <div class="menu-category">
-        <h3>Espresso Drinks</h3>
-        <div class="menu-items">
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Classic Espresso</h4>
-              <p>Rich, bold, and perfectly pulled</p>
-            </div>
-            <span class="menu-item-price">$3.25</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Americano</h4>
-              <p>Espresso with hot water for a smooth, full-bodied cup</p>
-            </div>
-            <span class="menu-item-price">$3.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Cappuccino</h4>
-              <p>Equal parts espresso, steamed milk, and velvety foam</p>
-            </div>
-            <span class="menu-item-price">$4.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Latte</h4>
-              <p>Espresso with steamed milk and a light foam crown</p>
-            </div>
-            <span class="menu-item-price">$4.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Vanilla Bean Latte</h4>
-              <p>House-made vanilla syrup with our signature espresso</p>
-            </div>
-            <span class="menu-item-price">$5.25</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Mocha</h4>
-              <p>Espresso, steamed milk, and Belgian chocolate</p>
-            </div>
-            <span class="menu-item-price">$5.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Caramel Macchiato</h4>
-              <p>Vanilla, steamed milk, espresso, and caramel drizzle</p>
-            </div>
-            <span class="menu-item-price">$5.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>The Bookworm</h4>
-              <p>Our signature drink: maple, cinnamon, espresso, and oat milk</p>
-            </div>
-            <span class="menu-item-price">$5.75</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-category">
-        <h3>Brewed Coffee</h3>
-        <div class="menu-items">
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>House Blend</h4>
-              <p>Medium roast with notes of chocolate and toasted nuts</p>
-            </div>
-            <span class="menu-item-price">$2.75 / $3.25</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Single Origin Pour Over</h4>
-              <p>Rotating selection, ask your barista for today's origin</p>
-            </div>
-            <span class="menu-item-price">$4.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Cold Brew</h4>
-              <p>Steeped for 20 hours for a smooth, bold finish</p>
-            </div>
-            <span class="menu-item-price">$4.25</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Nitro Cold Brew</h4>
-              <p>Creamy, cascading cold brew infused with nitrogen</p>
-            </div>
-            <span class="menu-item-price">$5.00</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Tea & Other Beverages</h2>
-
-      <div class="menu-category">
-        <h3>Hot Tea</h3>
-        <div class="menu-items">
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Earl Grey</h4>
-              <p>Classic bergamot-infused black tea</p>
-            </div>
-            <span class="menu-item-price">$3.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>English Breakfast</h4>
-              <p>Robust and full-bodied, perfect with milk</p>
-            </div>
-            <span class="menu-item-price">$3.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Chamomile Dreams</h4>
-              <p>Soothing chamomile with hints of honey and lavender</p>
-            </div>
-            <span class="menu-item-price">$3.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Matcha Latte</h4>
-              <p>Ceremonial grade matcha with your choice of milk</p>
-            </div>
-            <span class="menu-item-price">$5.25</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>London Fog</h4>
-              <p>Earl Grey, steamed milk, and vanilla</p>
-            </div>
-            <span class="menu-item-price">$4.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Chai Latte</h4>
-              <p>House-spiced chai with steamed milk</p>
-            </div>
-            <span class="menu-item-price">$4.75</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-category">
-        <h3>Other Beverages</h3>
-        <div class="menu-items">
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Hot Chocolate</h4>
-              <p>Rich Belgian chocolate with whipped cream</p>
-            </div>
-            <span class="menu-item-price">$4.25</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Steamer</h4>
-              <p>Steamed milk with your choice of flavor</p>
-            </div>
-            <span class="menu-item-price">$3.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Italian Soda</h4>
-              <p>Sparkling water with house-made syrups</p>
-            </div>
-            <span class="menu-item-price">$3.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Fresh Squeezed Orange Juice</h4>
-              <p>Made to order with Florida oranges</p>
-            </div>
-            <span class="menu-item-price">$4.50</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Food & Pastries</h2>
-
-      <div class="menu-category">
-        <h3>Fresh Baked Pastries</h3>
-        <div class="menu-items">
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Famous Cinnamon Roll</h4>
-              <p>Warm, gooey, with cream cheese frosting — our bestseller!</p>
-            </div>
-            <span class="menu-item-price">$4.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Butter Croissant</h4>
-              <p>Flaky, buttery, baked fresh every morning</p>
-            </div>
-            <span class="menu-item-price">$3.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Almond Croissant</h4>
-              <p>Filled with almond cream and topped with sliced almonds</p>
-            </div>
-            <span class="menu-item-price">$4.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Blueberry Muffin</h4>
-              <p>Bursting with fresh blueberries and a streusel top</p>
-            </div>
-            <span class="menu-item-price">$3.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Chocolate Chip Cookie</h4>
-              <p>Chewy center, crispy edges, Belgian chocolate chunks</p>
-            </div>
-            <span class="menu-item-price">$2.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Scone of the Day</h4>
-              <p>Ask your server for today's flavor</p>
-            </div>
-            <span class="menu-item-price">$3.50</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="menu-category">
-        <h3>Light Fare</h3>
-        <div class="menu-items">
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Avocado Toast</h4>
-              <p>Smashed avocado, everything seasoning, microgreens on sourdough</p>
-            </div>
-            <span class="menu-item-price">$8.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Caprese Panini</h4>
-              <p>Fresh mozzarella, tomato, basil, and balsamic glaze</p>
-            </div>
-            <span class="menu-item-price">$9.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Turkey & Brie Sandwich</h4>
-              <p>Roasted turkey, brie, arugula, and cranberry aioli</p>
-            </div>
-            <span class="menu-item-price">$10.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Soup of the Day</h4>
-              <p>House-made, served with crusty bread</p>
-            </div>
-            <span class="menu-item-price">$6.50</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Quiche Lorraine</h4>
-              <p>Classic bacon and gruyere with side salad</p>
-            </div>
-            <span class="menu-item-price">$8.75</span>
-          </div>
-          <div class="menu-item">
-            <div class="menu-item-info">
-              <h4>Yogurt Parfait</h4>
-              <p>Greek yogurt, house granola, seasonal fruit, and honey</p>
-            </div>
-            <span class="menu-item-price">$6.25</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <div id="menu-container"></div>
+    
     <section class="featured">
       <h3 style="color: var(--coffee-brown); margin-bottom: 1rem;">Dietary Options</h3>
       <p style="max-width: 700px; margin: 0 auto;">We offer oat, almond, and soy milk alternatives (+$0.75). Many items can be made gluten-free upon request. Please inform your server of any allergies. Vegan pastry options available daily.</p>
@@ -332,6 +67,11 @@
   </footer>
 
 <!--added for week 5-->  
-  <script src="script.js"></script>
+  <!--<script src="script.js"></script>-->
+  <script src="menu.js"></script>
+  <script src="menu-render.js"></script>
+  <script src="menu-filter.js"></script>
+  <script src="menu-search.js"></script>
+  
 </body>
 </html>
